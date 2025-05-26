@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <base href="/">
+  <base href="./">
 
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="A new Flutter project.">
+  <meta name="description" content="Digit Wars Game">
 
   <!-- iOS meta tags & icons -->
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-app-status-bar-style" content="black">
   <meta name="apple-mobile-web-app-title" content="digitwars_io">
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
+  
+  <!-- Updated links with subfolder prefix -->
+  <link rel="apple-touch-icon" href="digitwars/icons/Icon-192.png">
+  <link rel="icon" type="image/png" href="digitwars/favicon.png"/>
+  <link rel="manifest" href="digitwars/manifest.json">
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png"/>
-  <title>digitwars_io</title>
-  <link rel="manifest" href="manifest.json">
-
+  <!-- Preserved style section -->
   <style>
     body {
       margin: 0;
@@ -50,33 +51,12 @@
   </style>
 </head>
 <body>
-  <!-- Loader screen -->
+  <!-- Updated loader path -->
   <div id="loader">
-    <img src="assets/loading-text.gif" alt="Loading..." />
+    <img src="digitwars/assets/loading-text.gif" alt="Loading..." />
   </div>
 
-  <!-- Flutter will render the canvas -->
-  <script>
-    const flutterLoader = window.flutterWebRenderer ?? 'auto';
-    window.addEventListener('load', function () {
-      // Wait until Flutter attaches itself
-      const appDiv = document.getElementById('flutter');
-      if (!appDiv) {
-        const observer = new MutationObserver((mutations, obs) => {
-          const flutterCanvas = document.querySelector('flt-glass-pane') || document.querySelector('flutter-view');
-          if (flutterCanvas) {
-            document.getElementById('loader')?.remove();
-            obs.disconnect();
-          }
-        });
-        observer.observe(document.body, { childList: true, subtree: true });
-      } else {
-        document.getElementById('loader')?.remove();
-      }
-    });
-  </script>
-
-  <!-- Bootstrap Flutter -->
-  <script src="flutter_bootstrap.js" async></script>
+  <!-- Updated script paths -->
+  <script src="digitwars/flutter_bootstrap.js" async></script>
 </body>
 </html>
