@@ -34081,10 +34081,10 @@ s=B.i.d7(n.b-m.b+1000*(n.a-m.a),1e6)>=2?10:11
 break
 case 10:--p.d
 p.w=new A.d4(Date.now(),0,!1)
-new A.a5X().$0()
-p.c.ed()
 o.push(h)
 p.x=!0
+new A.a5X().$0()
+p.c.ed()
 s=p.fy==null?12:13
 break
 case 12:s=14
@@ -34266,7 +34266,7 @@ $0(){},
 $S:0}
 A.a5Y.prototype={
 $0(){var s=this.a
-if(s.c!=null)s.af(new A.a5W(s))},
+if(s.c!=null&&s.x)s.af(new A.a5W(s))},
 $S:0}
 A.a5W.prototype={
 $0(){return this.a.x=!1},
