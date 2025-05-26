@@ -34118,7 +34118,6 @@ c.d=b
 e.dB(c.gqR())
 c.a4(0,new A.a6_(p))
 p.ay=new A.aL(c,new A.aH(f,32+(g-1)*10,k),j)
-if(a)p.XX()
 g=p.ax
 g.z=B.ao
 g.y=g.w=null
@@ -34130,7 +34129,8 @@ f===$&&A.a()
 if(g.as!==f){g.as=f
 g.mu(f)}s=18
 return A.a_(g.v1(g.b),$async$lo)
-case 18:case 17:case 7:case 4:m.length===l||(0,A.A)(m),++i
+case 18:if(a)p.XX()
+case 17:case 7:case 4:m.length===l||(0,A.A)(m),++i
 s=3
 break
 case 5:if(o.length!==0)p.af(new A.a60(p,o))
