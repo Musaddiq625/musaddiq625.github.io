@@ -34027,18 +34027,18 @@ do{e=j+a6.jw()*h
 d=g+a6.jw()*i
 c=A.a0(A.hL(o,!0,n),n)
 B.b.K(c,a5)
-b=c.length
-a=0
-while(!0){if(!(a<c.length)){a0=!0
-break}a1=c[a]
+a=c.length
+a0=0
+while(!0){if(!(a0<c.length)){b=!0
+break}a1=c[a0]
 a2=a1.b
 a3=a2.a-e
 a2=a2.b-d
-if(Math.sqrt(a3*a3+a2*a2)<a1.c+k+10){a0=!1
-break}c.length===b||(0,A.A)(c);++a}c=a4.ch
-if(c!=null){b=e-c.a
+if(Math.sqrt(a3*a3+a2*a2)<a1.c+k+10){b=!1
+break}c.length===a||(0,A.A)(c);++a0}c=a4.ch
+if(c!=null){a=e-c.a
 c=d-c.b
-if(Math.sqrt(b*b+c*c)<a4.at/2+k+20)a0=!1}++f}while(!a0&&f<20)
+if(Math.sqrt(a*a+c*c)<a4.at/2+k+20)b=!1}++f}while(!b&&f<20)
 j=Date.now()
 i=B.kE[a6.JO(18)]
 i=A.an(204,i.u()>>>16&255,i.u()>>>8&255,i.u()&255)
@@ -34106,10 +34106,8 @@ d=5*(g-1)
 f=p.z
 s=f>=d?16:17
 break
-case 16:p.z=f-d
-p.as=g+1
-if(a)p.XX()
-g=p.as
+case 16:p.z=f-d;++g
+p.as=g
 f=p.at
 e=p.ax
 e===$&&A.a()
@@ -34120,6 +34118,7 @@ c.d=b
 e.dB(c.gqR())
 c.a4(0,new A.a6_(p))
 p.ay=new A.aL(c,new A.aH(f,32+(g-1)*10,k),j)
+if(a)p.XX()
 g=p.ax
 g.z=B.ao
 g.y=g.w=null
@@ -34276,8 +34275,12 @@ A.a5Z.prototype={
 $0(){},
 $S:0}
 A.a6_.prototype={
-$0(){var s=this.a
-if(s.c!=null)s.af(new A.a5V(s))},
+$0(){var s,r,q,p=this.a
+if(p.c!=null){s=p.at
+r=p.ay
+r===$&&A.a()
+q=r.a
+if(s!==r.b.a1(0,q.gp(q)))p.af(new A.a5V(p))}},
 $S:0}
 A.a5V.prototype={
 $0(){var s,r=this.a,q=r.ay
