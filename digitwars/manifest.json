@@ -1,7 +1,7 @@
 {
     "name": "digitwars_io",
     "short_name": "digitwars_io",
-    "start_url": ".",
+    "start_url": "./",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
@@ -10,7 +10,7 @@
     "prefer_related_applications": false,
     "icons": [
         {
-            "src": "icons/Icon-192.png",
+            "src": "digitwars/icons/Icon-192.png",
             "sizes": "192x192",
             "type": "image/png"
         },
@@ -33,3 +33,4 @@
         }
     ]
 }
+    
