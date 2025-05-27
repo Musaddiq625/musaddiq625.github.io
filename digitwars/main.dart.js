@@ -6875,14 +6875,16 @@ while(true)switch(s){case 0:s=2
 return A.Y($.Ok().mY("hitFirstTime_","true"),$async$a_w)
 case 2:return A.U(null,r)}})
 return A.V($async$a_w,r)},
-a_u(){var s=0,r=A.W(t.y),q
+a_u(){var s=0,r=A.W(t.X7),q,p
 var $async$a_u=A.X(function(a,b){if(a===1)return A.T(b,r)
 while(true)switch(s){case 0:s=3
 return A.Y($.Ok().mU("hitFirstTime_"),$async$a_u)
-case 3:q=b==null
+case 3:p=b
+if(p==null){q=null
 s=1
-break
-case 1:return A.U(q,r)}})
+break}else{q=p==="true"
+s=1
+break}case 1:return A.U(q,r)}})
 return A.V($async$a_u,r)},
 arE(a){var s=J.aS(a),r=A.ea(s.i(a,"score")),q=A.aoj(A.bX(s.i(a,"time"))),p=B.b.IM(B.DL,new A.a_A(a)),o=s.i(a,"gameMode"),n=J.aS(o),m=A.bX(n.i(o,"name"))
 o=A.ea(n.i(o,"enemiesCount"))
