@@ -3,7 +3,7 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 
-const RESOURCES = {"flutter_bootstrap.js": "66d98a5824809193faa5f9cd5b72df3c",
+const RESOURCES = {"flutter_bootstrap.js": "9fbf180516e5e20684bcd40f37352a4b",
 "version.json": "25da375e672ee91b09f9649845b8dd29",
 "index.html": "38b84d6cafba71acdf96eb66b989a993",
 "/": "38b84d6cafba71acdf96eb66b989a993",
@@ -17,6 +17,11 @@ const RESOURCES = {"flutter_bootstrap.js": "66d98a5824809193faa5f9cd5b72df3c",
 "manifest.json": "fcb59b1d6f59db9b8ac1c3f1a8b9c658",
 "assets/AssetManifest.json": "2efbb41d7877d10aac9d091f58ccd7b9",
 "assets/NOTICES": "244937d5521782f7628e9b9c4995b022",
+"assets/sounds/shoot.mp3": "ce59e6de365fae9f279c699533548bdb",
+"assets/sounds/game-over-arcade.mp3": "2b25b90aabcbacec0b4cfd2172f4dae1",
+"assets/sounds/got-hit.wav": "34bdb9ea21881fca376b854ea6eee577",
+"assets/sounds/explode.mp3": "dae4fc5201eb3d27a95ffd11399bdf02",
+"assets/sounds/soundtrack-space.mp3": "1a9ee96867bab16541a17c06f7a88845",
 "assets/FontManifest.json": "dc3d03800ccca4601324923c0b1d6d57",
 "assets/AssetManifest.bin.json": "69a99f98c8b1fb8111c5fb961769fcd8",
 "assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "33b7d9392238c04c131b6ce224e13711",
