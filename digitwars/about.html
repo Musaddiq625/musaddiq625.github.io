@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About DigitWars - Survive the clock in DigitWars ⏱️</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body style="min-height: 100%; position: relative;">
+    <canvas id="shader-canvas"
+        style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;"></canvas>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <h1>DigitWars</h1>
+            <p class="subtitle">Survive the clock in DigitWars ⏱️</p>
+        </div>
+    </header>
+
+    <!-- Game Showcase -->
+    <section class="game-showcase">
+        <div class="center">
+            <h2>See It In Action</h2>
+            <div style="display: flex; justify-content: center; width: 100%;">
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/2S6mwERI0wU" title="DigitWars Gameplay Trailer"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2>Game Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-bolt"></i>
+                    <h3>Quick Play</h3>
+                    <p>Jump into fast-paced math battles that challenge your speed and accuracy in solving problems.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-gamepad"></i>
+                    <h3>Fun & Engaging</h3>
+                    <p>Enjoy a fun, addictive math game that makes learning enjoyable and rewarding.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-history"></i>
+                    <h3>Track Highscores</h3>
+                    <p>Monitor your progress and compete with yourself to beat your personal best scores.</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-ad"></i>
+                    <h3>No Ads</h3>
+                    <p>Fully focused gaming experience with no interruptions from advertisements.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Flutter Section -->
+    <section class="flutter-section">
+        <div class="container">
+            <h2>Built with Flutter</h2>
+            <p>DigitWars is powered by Flutter, Google's UI toolkit for building natively compiled applications for
+                mobile, web, and desktop from a single codebase.</p>
+
+            <div class="benefits">
+                <div class="benefit">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Cross-Platform</h3>
+                    <p>Play seamlessly across all your devices with a single codebase.</p>
+                </div>
+                <div class="benefit">
+                    <i class="fas fa-bolt"></i>
+                    <h3>High Performance</h3>
+                    <p>60fps smooth animations and instant response times.</p>
+                </div>
+                <div class="benefit">
+                    <i class="fas fa-sync"></i>
+                    <h3>Instant Updates</h3>
+                    <p>Get the latest features and improvements instantly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="cta-section" class="cta">
+        <div class="container">
+            <h2>Ready to Join the DigitWars?</h2>
+            <p>Download DigitWars now and start your journey to become a math champion!</p>
+            <div class="cta-buttons">
+                <a href="https://musaddiq625.github.io/digitwars/" target="_blank" id="play-web-button" class="btn btn-outline">
+                    <i class="fas fa-globe"></i> Play on Web
+                </a>
+            </div>
+            <div class="coming-soon-buttons">
+                <a href="#" class="btn coming-soon" onclick="return false;">
+                    <i class="fab fa-google-play"></i> Coming Soon
+                </a>
+                <a href="#" class="btn coming-soon" onclick="return false;">
+                    <i class="fab fa-apple"></i> Coming Soon
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-bottom">
+                <div class="footer-links">
+                    <a href="https://musaddiq625.github.io/digitwars/privacy-policy.html">Privacy Policy</a>
+                </div>
+                <p>&copy; 2025. All rights reserved. DigitWars by Musaddiq625</p>
+                <br>
+                <p>Made with ❤️ by Musaddiq625</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/cloudy-background.js"></script>
+    <script src="js/smooth-scroll.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Handle Play Now button click
+            const playNowBtn = document.getElementById('play-now-btn');
+            if (playNowBtn) {
+                playNowBtn.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const ctaSection = document.getElementById('cta-section');
+                    if (ctaSection) {
+                        ctaSection.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            }
+
+            // Existing animation code
+            const animateOnScroll = () => {
+                const elements = document.querySelectorAll('.fade-in');
+                elements.forEach(element => {
+                    const elementTop = element.getBoundingClientRect().top;
+                    const windowHeight = window.innerHeight;
+                    if (elementTop < windowHeight - 100) {
+                        element.style.opacity = '1';
+                        element.style.transform = 'translateY(0)';
+                    }
+                });
+            };
+
+            window.addEventListener('scroll', animateOnScroll);
+            animateOnScroll(); // Initial check
+        });
+    </script>
+</body>
+
+</html>
